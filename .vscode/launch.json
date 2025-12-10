@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-LawsonPrevostTp1Application<lawson-prevost-tp1>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.lawson_prevost_tp1.LawsonPrevostTp1Application",
+            "projectName": "lawson-prevost-tp1",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

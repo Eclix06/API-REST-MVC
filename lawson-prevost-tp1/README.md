@@ -17,8 +17,8 @@ API REST réalisée avec Spring Boot 3.5, Spring Data JPA, Bean Validation et Sp
 
 Dans `application.properties` :
 
-
-spring.datasource.url=jdbc:mysql://localhost:3306/tp1?createDatabaseIfNotExist=true
+```
+spring.datasource.url=jdbc:mysql://localhost:3306/tp1?createDatabaseIfNotExist=true 
 spring.datasource.username=root
 spring.datasource.password=XXXX
 
@@ -27,17 +27,18 @@ spring.jpa.show-sql=false
 
 app.api-key=123456789abcdef
 springdoc.api-docs.version=OPENAPI_3_0
-
+```
 
 ## Commandes
 
-
+```
 mvn clean install
 mvn spring-boot:run
-
+```
 
 Application disponible sur :
 [http://localhost:8080](http://localhost:8080)
+
 Documentation Swagger :
 [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
 
@@ -126,17 +127,17 @@ GET /books?sort=title,asc
 
 ## Créer un auteur
 
-
+```
 {
   "firstName": "George",
   "lastName": "Orwell",
   "birthDate": "1903-06-25"
 }
-
+```
 
 ## Créer un livre
 
-
+```
 {
   "title": "1984",
   "isbn": "9782070368228",
@@ -144,11 +145,11 @@ GET /books?sort=title,asc
   "category": "NOVEL",
   "authorId": 1
 }
-
+```
 
 ## Exemple de requête invalide (ISBN incorrect)
 
-
+```
 {
   "title": "Bad book",
   "isbn": "123",
@@ -156,7 +157,7 @@ GET /books?sort=title,asc
   "category": "NOVEL",
   "authorId": 1
 }
-
+```
 
 Résultat attendu : 400 Bad Request.
 
