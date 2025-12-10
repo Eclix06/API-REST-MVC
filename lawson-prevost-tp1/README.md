@@ -178,7 +178,7 @@ Si besoin, je peux te générer le fichier directement.
 # 8. Architecture du projet
 
 
-
+```
 src/
  ├─ controller/
  ├─ service/
@@ -187,7 +187,7 @@ src/
  ├─ dto/
  ├─ exception/
  ├─ config/
-
+```
 
 
 * DTO : validation et transfert
